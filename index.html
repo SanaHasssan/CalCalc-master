@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="preload" href="fonts/pt-sans-caption-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pt-sans-caption-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Счётчик калорий</title>
+</head>
+<body class="page">
+  <main class="main">
+    <article>
+        <h1>
+            Счётчик калорий
+        </h1>
+        <div class="container">
+            <form class="" name="counter" action="#" method="post">
+    
+                <h2>
+                    Пол
+                </h2>
+                <ul class="gender-list">
+                    <li>
+                        <label>
+                            <input type="radio" name="gender" checked>
+                            <span class="gender-list-left">Мужчина</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="gender">
+                            <span class="gender-list-right">Женщина</span>
+                        </label>
+                    </li>
+                </ul>
+    
+                <fieldset class="fisical">
+                    <legend>
+                        Физические параметры
+                    </legend>
+
+                    <div class="fisical-col">
+                        <div>
+                            <label>Возраст</label>
+                            <span>лет</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="0">
+                        </div>
+                    </div>
+
+                    <div class="fisical-col">
+                        <div>
+                            <label>Рост</label>
+                            <span>см</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="0">
+                        </div>
+                    </div>
+
+                    <div class="fisical-col">
+                        <div>
+                            <label>Вес</label>
+                            <span>кг</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="0">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="activity">
+                <legend>
+                    Физическая активность
+                </legend>
+                <ul>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Минимальная</spa>
+                        </label>
+                    </div>
+                    <p>
+                        Сидячая работа и нет физических нагрузок
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Низкая</span>
+                        </label>
+                    </div>
+                    <p>
+                        Редкие, нерегулярные тренировки, активность в быту
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Средняя</span>
+                        </label>
+                    </div>
+                    <p>
+                        Тренировки 3-5 раз в неделю
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Высокая</span>
+                        </label>
+                    </div>
+                    <p>
+                        Тренировки 6-7 раз в неделю
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Очень высокая</span>
+                        </label>
+                    </div>
+                    <p>
+                        Больше 6 тренировок в неделю и физическая работа
+                    </p>
+                    </li>
+                </ul>
+                </fieldset>
+    
+                <div class="buttons">
+                    <button class="submit" name="submit" type="submit" disabled>
+                        Рассчитать
+                    </button>
+                    <button class="reset" name="reset" type="reset" disabled>
+                        <span>
+                            Очистить поля и расчёт
+                        </span>
+                    </button>
+                </div>
+            </form>
+    
+        </div>
+
+    </article>
+
+    <section style="display: none">
+        <h2>
+            Ваша норма калорий
+        </h2>
+        <ul >
+            <li>
+                <h3>
+                <span class="normal_cal">3 800</span> ккал
+                </h3>
+                <p>
+                    поддержание веса
+                </p>
+            </li>
+            <li>
+                <h3>
+                <span>3 300</span> ккал
+                </h3>
+                <p>
+                    снижение веса
+                </p>
+            </li>
+            <li>
+                <h3>
+                <span>4 000</span> ккал
+                </h3>
+                <p>
+                    набор веса
+                </p>
+            </li>
+        </ul>
+    </section>
+    
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

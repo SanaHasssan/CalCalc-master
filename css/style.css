@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'pt-sans';
+  src: url('../fonts/pt-sans-caption-regular.woff2') format('woff2'), url('../fonts/pt-sans-caption-regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'pt-sans';
+  src: url('../fonts/pt-sans-caption-bold.woff2') format('woff2'), url('../fonts/pt-sans-caption-bold.woff') format('woff');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'pt-sans';
+  font-size: 16px;
+  line-height: 1.5;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px gray;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto; 
+  padding: 25px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.gender-list {
+  display: flex;
+}
+
+.gender-list li {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.gender-list input {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.gender-list span {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #FE7C36;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.gender-list-left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.gender-list-right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.gender-list input:checked + span {
+  background-color: #FE7C36;
+  color: #fff;
+}
+
+.fisical {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fisical legend {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.fisical-col {
+  width: 33%;
+}
+
+.fisical-col:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fisical-col:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.fisical-col label {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.fisical-col span {
+  color: gray;
+}
+
+.fisical-col input {
+  color: gray;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.activity {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.activity legend {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.activity input {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.activity span {
+  display: flex;
+  cursor: pointer;
+}
+
+.activity span::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  content: '';
+  background-image: url('../img/icon-radio-empty.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.activity input:checked + span {
+  color: #FE7C36;
+}
+
+.activity input:checked + span::before {
+  background-image: url('../img/icon-radio-checked.svg');
+}
+
+.activity p {
+  margin: 0;
+  padding-left: 32px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgb(158, 158, 158);
+}
+
+.buttons {
+  display: flex;
+}
+
+.submit,
+.reset {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+}
+
+.submit {
+  color: #fff;
+  background-color: #FE7C36;
+}
+
+.submit:disabled {
+  background-color: gray;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.reset:disabled {
+  color: rgb(158, 158, 158);
+  cursor: auto;
+}
+
+.reset::before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  content: '';
+  background-image: url('../img/icon-cross.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.reset:disabled:before {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
